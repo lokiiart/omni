@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" fixed-end="true" id="abEUDDlxfFf">
+  <prototype-task>
+    <task id="t-2">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <child-resource idref="r4"/>
+    <child-resource idref="r7"/>
+    <child-resource idref="r8"/>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+    <child-resource idref="r3"/>
+  </resource>
+  <resource id="r1">
+    <name>鼓手</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>贝斯手</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>吉他手</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r4">
+    <name>鼓技巧</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r7">
+    <name>吉他技巧</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r8">
+    <name>工程师</name>
+    <type>Staff</type>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t14"/>
+    <child-task idref="t8"/>
+    <child-task idref="t7"/>
+    <child-task idref="t13"/>
+    <child-task idref="t17"/>
+  </task>
+  <task id="t1">
+    <title>鼓的设置</title>
+    <leveled-start>2001-01-05T06:11:40.000Z</leveled-start>
+    <effort>2700</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>2700</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <assignment idref="r4"/>
+  </task>
+  <task id="t2">
+    <title>贝斯的设置</title>
+    <leveled-start>2001-01-05T05:41:40.000Z</leveled-start>
+    <effort>1800</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>1800</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t3">
+    <title>吉他的设置</title>
+    <leveled-start>2001-01-05T06:11:40.000Z</leveled-start>
+    <effort>1800</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>1800</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <assignment idref="r7"/>
+  </task>
+  <task id="t4">
+    <title>音响设置</title>
+    <leveled-start>2001-01-05T06:11:40.000Z</leveled-start>
+    <effort>3600</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>3600</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t5">
+    <title>声音检测</title>
+    <leveled-start>2001-01-05T06:21:40.000Z</leveled-start>
+    <effort>600</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>600</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t1"/>
+    <prerequisite-task idref="t2"/>
+    <prerequisite-task idref="t3"/>
+    <prerequisite-task idref="t4"/>
+    <assignment idref="r4"/>
+    <assignment idref="r7"/>
+    <assignment idref="r8"/>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t6">
+    <title>灯光设置</title>
+    <leveled-start>2001-01-05T07:21:40.000Z</leveled-start>
+    <effort>1800</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>1800</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <assignment idref="r8"/>
+  </task>
+  <task id="t7">
+    <title>演出时间</title>
+    <type>milestone</type>
+    <leveled-start>2001-01-05T07:21:40.000Z</leveled-start>
+    <end-constraint-date>2001-01-05T23:35:00.000Z</end-constraint-date>
+    <recalculate>effort</recalculate>
+    <fixed-duration>0</fixed-duration>
+    <note>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-fill">
+                <color w="0"/>
+              </value>
+              <value key="font-size">12</value>
+            </style>
+            <lit>如果仍有大量观众等待进场，则可能需要延迟。</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.74902" g="0.74902" b="0.74902"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t8"/>
+    <prerequisite-task idref="t14"/>
+    <end-no-later-than>2001-01-05T23:35:00.000Z</end-no-later-than>
+  </task>
+  <task id="t8">
+    <title>观众到场</title>
+    <leveled-start>2001-01-05T07:21:40.000Z</leveled-start>
+    <effort>3600</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>3600</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t5"/>
+  </task>
+  <task id="t9">
+    <title>设置 1</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2001-01-05T07:36:40.000Z</leveled-start>
+    <effort>900</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>900</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <assignment idref="r3"/>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t10">
+    <title>鼓独奏</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2001-01-05T07:46:40.000Z</leveled-start>
+    <effort>600</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>600</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t9"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t11">
+    <title>声学设置</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2001-01-05T08:01:40.000Z</leveled-start>
+    <effort>900</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>900</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t10"/>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t12">
+    <title>设置 2</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2001-01-05T08:16:40.000Z</leveled-start>
+    <effort>900</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>900</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t11"/>
+    <assignment idref="r3"/>
+    <assignment idref="r2"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t13">
+    <title>音乐会</title>
+    <type>group</type>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+    <child-task idref="t11"/>
+    <child-task idref="t12"/>
+    <child-task idref="t15"/>
+    <child-task idref="t16"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t7"/>
+  </task>
+  <task id="t14">
+    <title>设置</title>
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t2"/>
+    <child-task idref="t3"/>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.380392" g="0.694118" b="0.490196"/>
+      </value>
+    </style>
+  </task>
+  <task id="t15">
+    <title>返场休息</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2001-01-05T08:26:40.000Z</leveled-start>
+    <effort>600</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t12"/>
+  </task>
+  <task id="t16">
+    <title>返场</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2001-01-05T08:30:00.000Z</leveled-start>
+    <effort>600</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t15"/>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t17">
+    <title>拆卸</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2001-01-05T09:00:00.000Z</leveled-start>
+    <effort>5400</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.8" g="0.721569" b="0.278431"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t13"/>
+    <assignment idref="r7"/>
+    <assignment idref="r8"/>
+    <assignment idref="r4"/>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

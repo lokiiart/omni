@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="lemonzee" date="2015-11-11T01:36:52.333Z" timestamp="2015-11-11T01:36:52.333Z">
+    <change idref="t1" attribute="resourceLeveledDate" type="date" from="2001-01-03T03:00:00.000Z" to="2001-01-02T11:00:00.000Z" resolved="yes"/>
+    <change idref="t2" attribute="resourceLeveledDate" type="date" from="2001-01-02T01:00:00.000Z" to="2001-01-01T09:00:00.000Z" resolved="yes"/>
+    <change idref="t3" attribute="resourceLeveledDate" type="date" from="2001-01-02T01:00:00.000Z" to="2001-01-01T09:00:00.000Z" resolved="yes"/>
+    <change idref="t6" attribute="resourceLeveledDate" type="date" from="2001-01-02T04:00:00.000Z" to="2001-01-01T12:00:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="effort" type="real" from="3600" to="0" resolved="yes"/>
+    <change idref="t8" attribute="resourceLeveledDate" type="date" from="2001-01-03T01:00:00.000Z" to="2001-01-01T09:00:00.000Z" resolved="yes"/>
+    <change idref="t8" attribute="internalAssignments" type="string" from="3[2]" to="3" resolved="yes"/>
+    <change idref="t9" attribute="resourceLeveledDate" type="date" from="2001-01-04T02:00:00.000Z" to="2001-01-03T10:00:00.000Z" resolved="yes"/>
+    <change idref="t10" attribute="resourceLeveledDate" type="date" from="2001-01-04T03:00:00.000Z" to="2001-01-03T11:00:00.000Z" resolved="yes"/>
+    <change idref="t11" attribute="resourceLeveledDate" type="date" from="2001-01-04T04:00:00.000Z" to="2001-01-03T12:00:00.000Z" resolved="yes"/>
+    <change idref="t12" attribute="resourceLeveledDate" type="date" from="2001-01-04T03:00:00.000Z" to="2001-01-03T11:00:00.000Z" resolved="yes"/>
+    <change idref="t13" attribute="resourceLeveledDate" type="date" from="2001-01-05T01:00:00.000Z" to="2001-01-04T09:00:00.000Z" resolved="yes"/>
+  </task-change-set>
+  <metadata-change-set user="lemonzee" date="2015-11-11T01:36:52.331Z" timestamp="2015-11-11T01:36:52.331Z">
+    <change idref="m1" attribute="projectTitle" type="string" to="搬家" resolved="yes"/>
+  </metadata-change-set>
+</changelog>

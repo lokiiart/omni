@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="lokiiart" date="2015-11-11T02:47:06.169Z" timestamp="2015-11-11T02:47:06.169Z">
+    <change idref="t11" attribute="internalAssignments" type="string" from="28; 29" to="28; 29; 27; 26; 25; 30; 32"/>
+  </task-change-set>
+  <metadata-change-set user="lemonzee" date="2015-11-11T01:37:15.048Z" timestamp="2015-11-11T01:37:15.048Z">
+    <change idref="m1" attribute="projectTitle" type="string" from="New Product Development" to="新项目开发" resolved="yes"/>
+  </metadata-change-set>
+</changelog>

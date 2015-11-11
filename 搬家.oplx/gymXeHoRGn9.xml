@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" xmlns:opns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="gymXeHoRGn9">
+  <granularity>hours</granularity>
+  <prototype-task>
+    <task id="t-2">
+      <title>任务 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-3">
+      <title>里程碑 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t-4">
+      <title>群组 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r-2">
+      <name>资源 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-3">
+      <name>设备 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-4">
+      <name>素材 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r-5">
+      <name>群组 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="61200" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="61200" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="61200" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="61200" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="61200" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="61200" end-time="79200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="61200" end-time="79200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r3"/>
+    <child-resource idref="r4"/>
+  </resource>
+  <resource id="r1">
+    <name>梅</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r2">
+    <name>松</name>
+    <type>Staff</type>
+  </resource>
+  <resource id="r3">
+    <name>任何人</name>
+    <type>Group</type>
+    <child-resource idref="r1"/>
+    <child-resource idref="r2"/>
+  </resource>
+  <resource id="r4">
+    <name>搬家卡车</name>
+    <type>Equipment</type>
+    <cost-per-hour>10</cost-per-hour>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t4"/>
+    <child-task idref="t14"/>
+    <child-task idref="t12"/>
+  </task>
+  <task id="t1">
+    <title>打包卧室</title>
+    <schedule-type>alap</schedule-type>
+    <leveled-start>2001-01-02T11:00:00.000Z</leveled-start>
+    <effort>14400</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.164706" g="0.631373" b="0.596078"/>
+      </value>
+    </style>
+    <assignment idref="r3">
+      <assignment idref="r2"/>
+    </assignment>
+  </task>
+  <task id="t2">
+    <title>打包厨房</title>
+    <leveled-start>2001-01-01T09:00:00.000Z</leveled-start>
+    <effort>18000</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.164706" g="0.631373" b="0.596078"/>
+      </value>
+    </style>
+    <assignment idref="r3">
+      <assignment idref="r2"/>
+    </assignment>
+  </task>
+  <task id="t3">
+    <title>打包起居室</title>
+    <leveled-start>2001-01-01T09:00:00.000Z</leveled-start>
+    <effort>10800</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.164706" g="0.631373" b="0.596078"/>
+      </value>
+    </style>
+    <assignment idref="r3">
+      <assignment idref="r1"/>
+    </assignment>
+  </task>
+  <task id="t4">
+    <title>打包</title>
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t2"/>
+    <child-task idref="t3"/>
+    <child-task idref="t6"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.164706" g="0.631373" b="0.596078"/>
+      </value>
+    </style>
+  </task>
+  <task id="t6">
+    <title>打包其他房间</title>
+    <leveled-start>2001-01-01T12:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.164706" g="0.631373" b="0.596078"/>
+      </value>
+    </style>
+    <assignment idref="r3">
+      <assignment idref="r1"/>
+    </assignment>
+  </task>
+  <task id="t8">
+    <title>借用搬家卡车</title>
+    <leveled-start>2001-01-01T09:00:00.000Z</leveled-start>
+    <effort>0</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>0</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.423529" g="0.443137" b="0.768627"/>
+      </value>
+    </style>
+    <assignment idref="r3"/>
+  </task>
+  <task id="t9">
+    <title>行李装车</title>
+    <leveled-start>2001-01-03T10:00:00.000Z</leveled-start>
+    <effort>7200</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.423529" g="0.443137" b="0.768627"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t4"/>
+    <prerequisite-task idref="t8"/>
+    <assignment idref="r1"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t10">
+    <title>开往新房子</title>
+    <leveled-start>2001-01-03T11:00:00.000Z</leveled-start>
+    <effort>3600</effort>
+    <recalculate>effort</recalculate>
+    <fixed-duration>3600</fixed-duration>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.423529" g="0.443137" b="0.768627"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t9"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t11">
+    <title>卸车</title>
+    <leveled-start>2001-01-03T12:00:00.000Z</leveled-start>
+    <effort>7200</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.423529" g="0.443137" b="0.768627"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t10"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t12">
+    <title>打扫旧房子</title>
+    <leveled-start>2001-01-03T11:00:00.000Z</leveled-start>
+    <effort>10800</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.827451" g="0.211765" b="0.509804"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t9"/>
+    <assignment idref="r2"/>
+  </task>
+  <task id="t13">
+    <title>归还搬家卡车</title>
+    <leveled-start>2001-01-04T09:00:00.000Z</leveled-start>
+    <effort>3600</effort>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.423529" g="0.443137" b="0.768627"/>
+      </value>
+    </style>
+    <prerequisite-task idref="t11"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t14">
+    <title>搬家</title>
+    <type>group</type>
+    <child-task idref="t8"/>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+    <child-task idref="t11"/>
+    <child-task idref="t13"/>
+    <style>
+      <value key="gantt-fill-color">
+        <color r="0.423529" g="0.443137" b="0.768627"/>
+      </value>
+    </style>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>

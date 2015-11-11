@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" id="hFdo1FmiZwd">
+  <named-styles-proxy>
+    <named-style-proxy name="Phase I" id="olQz1iCW6dW"/>
+    <named-style-proxy name="Phase II" id="gsOE5juAV5K"/>
+    <named-style-proxy name="Communication" id="kJfXbFpafBm"/>
+  </named-styles-proxy>
+  <top-resource idref="r2"/>
+  <resource id="r2">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+    </schedule>
+    <child-resource idref="r25"/>
+    <child-resource idref="r30"/>
+    <child-resource idref="r32"/>
+  </resource>
+  <resource id="r25">
+    <name>Engineering</name>
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+    </schedule>
+    <child-resource idref="r26"/>
+    <child-resource idref="r27"/>
+    <child-resource idref="r28"/>
+    <child-resource idref="r29"/>
+  </resource>
+  <resource id="r26">
+    <name>Ravna</name>
+    <type>Staff</type>
+    <cost-per-hour>65</cost-per-hour>
+    <efficiency>1.04999995231628</efficiency>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+    </schedule>
+    <email-address>rbergnsdot@relay.mid</email-address>
+  </resource>
+  <resource id="r27">
+    <name>Pham</name>
+    <type>Staff</type>
+    <cost-per-hour>65</cost-per-hour>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+    </schedule>
+  </resource>
+  <resource id="r28">
+    <name>Jefri</name>
+    <type>Staff</type>
+    <cost-per-hour>65</cost-per-hour>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+    </schedule>
+  </resource>
+  <resource id="r29">
+    <name>Johanna</name>
+    <type>Staff</type>
+    <cost-per-hour>65</cost-per-hour>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+    </schedule>
+  </resource>
+  <resource id="r30">
+    <name>PM</name>
+    <type>Staff</type>
+    <cost-per-hour>85</cost-per-hour>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="0" end-time="86400"/>
+      </schedule-day>
+    </schedule>
+  </resource>
+  <resource id="r32">
+    <name>Lab</name>
+    <type>Equipment</type>
+    <cost-per-hour>265</cost-per-hour>
+  </resource>
+  <top-task idref="t1"/>
+  <task id="t1">
+    <type>group</type>
+    <child-task idref="t3"/>
+    <child-task idref="t8"/>
+    <child-task idref="t20"/>
+  </task>
+  <task id="t3">
+    <title>Phase I</title>
+    <type>group</type>
+    <child-task idref="t4"/>
+    <child-task idref="t5"/>
+    <child-task idref="t6"/>
+    <child-task idref="t7"/>
+    <style>
+      <inherited-style name="Phase I" idref="olQz1iCW6dW"/>
+    </style>
+  </task>
+  <task id="t4">
+    <title>On-site evaluation</title>
+    <effort>116640</effort>
+    <effort-done>116640</effort-done>
+    <start-constraint-date>2001-01-01T16:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase I" idref="olQz1iCW6dW"/>
+    </style>
+    <assignment idref="r26"/>
+    <assignment idref="r27"/>
+    <assignment idref="r29"/>
+    <assignment idref="r30"/>
+  </task>
+  <task id="t5">
+    <title>Meeting with venue owners</title>
+    <effort>21960</effort>
+    <effort-done>21960</effort-done>
+    <start-constraint-date>2001-01-02T16:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase I" idref="olQz1iCW6dW"/>
+    </style>
+    <assignment idref="r30"/>
+    <assignment idref="r27"/>
+    <assignment idref="r26"/>
+  </task>
+  <task id="t6">
+    <title>Freeform Prototyping</title>
+    <effort>563580</effort>
+    <effort-done>139622</effort-done>
+    <start-constraint-date>2001-01-02T18:00:00.000Z</start-constraint-date>
+    <note>
+      <text>
+        <p>
+          <run>
+            <style>
+              <value key="font-fill">
+                <color r="0.333333" g="0.333333" b="0.333333"/>
+              </value>
+            </style>
+            <lit>Three days of unstructured experimentation, based on initial impressions from meeting</lit>
+          </run>
+        </p>
+      </text>
+    </note>
+    <style>
+      <inherited-style name="Phase I" idref="olQz1iCW6dW"/>
+    </style>
+    <assignment idref="r26"/>
+    <assignment idref="r27"/>
+    <assignment idref="r28"/>
+    <assignment idref="r29"/>
+    <assignment idref="r32"/>
+  </task>
+  <task id="t7">
+    <title>Meet up to show off ideas</title>
+    <effort>36360</effort>
+    <start-constraint-date>2001-01-07T18:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase I" idref="olQz1iCW6dW"/>
+    </style>
+    <assignment idref="r26"/>
+    <assignment idref="r27"/>
+    <assignment idref="r28"/>
+    <assignment idref="r29"/>
+    <assignment idref="r30"/>
+  </task>
+  <task id="t8">
+    <title>Phase II</title>
+    <type>group</type>
+    <child-task idref="t9"/>
+    <child-task idref="t14"/>
+    <child-task idref="t19"/>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+  </task>
+  <task id="t9">
+    <title>Mock-ups</title>
+    <type>group</type>
+    <child-task idref="t10"/>
+    <child-task idref="t11"/>
+    <child-task idref="t12"/>
+    <child-task idref="t13"/>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+  </task>
+  <task id="t10">
+    <title>Iteration 1</title>
+    <effort>169740</effort>
+    <start-constraint-date>2001-01-07T21:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r26"/>
+    <assignment idref="r27"/>
+  </task>
+  <task id="t11">
+    <title>Iteration 2</title>
+    <effort>165600</effort>
+    <start-constraint-date>2001-01-08T21:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r28"/>
+    <assignment idref="r29"/>
+  </task>
+  <task id="t12">
+    <title>Iteration 3</title>
+    <effort>169740</effort>
+    <start-constraint-date>2001-01-09T21:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r26"/>
+    <assignment idref="r27"/>
+  </task>
+  <task id="t13">
+    <title>Iteration 4</title>
+    <effort>511200</effort>
+    <start-constraint-date>2001-01-10T21:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r28"/>
+    <assignment idref="r29"/>
+  </task>
+  <task id="t14">
+    <title>Review</title>
+    <type>group</type>
+    <child-task idref="t15"/>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+  </task>
+  <task id="t15">
+    <title>Review 1</title>
+    <effort>140220</effort>
+    <start-constraint-date>2001-01-08T23:30:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r26"/>
+    <assignment idref="r27"/>
+  </task>
+  <task id="t16">
+    <title>Review 2</title>
+    <effort>136800</effort>
+    <start-constraint-date>2001-01-09T23:15:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r28"/>
+    <assignment idref="r29"/>
+  </task>
+  <task id="t17">
+    <title>Review 3</title>
+    <effort>29520</effort>
+    <start-constraint-date>2001-01-10T21:00:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r26"/>
+    <assignment idref="r27"/>
+  </task>
+  <task id="t18">
+    <title>Review 4</title>
+    <effort>136800</effort>
+    <start-constraint-date>2001-01-13T21:15:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+    <assignment idref="r28"/>
+    <assignment idref="r29"/>
+  </task>
+  <task id="t19">
+    <title>Company-wide presentation</title>
+    <effort>18000</effort>
+    <start-constraint-date>2001-01-14T16:15:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Phase II" idref="gsOE5juAV5K"/>
+    </style>
+  </task>
+  <task id="t20">
+    <title>Communication</title>
+    <type>group</type>
+    <child-task idref="t21"/>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+    <style>
+      <inherited-style name="Communication" idref="kJfXbFpafBm"/>
+    </style>
+  </task>
+  <task id="t21">
+    <title>Evaluate blogging software</title>
+    <effort>86400</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2001-01-01T16:15:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Communication" idref="kJfXbFpafBm"/>
+    </style>
+    <assignment idref="r28"/>
+  </task>
+  <task id="t22">
+    <title>Blog set-up</title>
+    <effort>172800</effort>
+    <effort-done>23040</effort-done>
+    <start-constraint-date>2001-01-02T16:15:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Communication" idref="kJfXbFpafBm"/>
+    </style>
+    <assignment idref="r28" units="0.5"/>
+  </task>
+  <task id="t23">
+    <title>Link up with social sites</title>
+    <effort>129600</effort>
+    <effort-done>3600</effort-done>
+    <start-constraint-date>2001-01-03T18:15:00.000Z</start-constraint-date>
+    <style>
+      <inherited-style name="Communication" idref="kJfXbFpafBm"/>
+    </style>
+    <assignment idref="r28" units="0.5"/>
+  </task>
+  <critical-path root="1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
